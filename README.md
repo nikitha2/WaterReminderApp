@@ -1,6 +1,6 @@
 # WaterReminderApp
 
-Topics covered: Services,
-                Broadcast receivers,
-                Sticky Intents,
-                JobSchelduler-WorkManager
+Topics covered: *Services,
+                *Broadcast receivers,
+                *Sticky Intents,
+                *JobSchelduler-WorkManager
