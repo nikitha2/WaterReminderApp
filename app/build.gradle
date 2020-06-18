@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.example.android.background"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    def work_version = "2.3.4"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    //Notifications
+    implementation "com.android.support:support-compat:28.0.0"
+
+    //WorkManager
+    // (Java only)
+    implementation "androidx.work:work-runtime:$work_version"
+    // optional - Test helpers
+    androidTestImplementation "androidx.work:work-testing:$work_version"
+    // Kotlin + coroutines
+    //implementation "androidx.work:work-runtime-ktx:$work_version"
+
+}
