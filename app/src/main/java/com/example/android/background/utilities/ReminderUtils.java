@@ -34,5 +34,6 @@ public class ReminderUtils {
                 .build();
 
         WorkManager.getInstance(context).enqueue(remindUserBecauseCharging);
+
     }
 }
